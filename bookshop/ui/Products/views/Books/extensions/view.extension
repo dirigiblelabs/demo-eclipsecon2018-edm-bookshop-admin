@@ -1,0 +1,5 @@
+{
+	"description": "Books view",
+	"extensionPoint": "launchpad-Bookshop-Products-view",
+	"module": "bookshop/ui/Products/views/Books/extensions/view.js"
+}

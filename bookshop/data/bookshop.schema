@@ -1,0 +1,130 @@
+{
+    "schema": {
+        "structures": [
+            {
+                "name": "BOOKSHOP_BOOKS",
+                "type": "TABLE",
+                "columns": [
+                    {
+                        "type": "INTEGER",
+                        "length": 0,
+                        "primaryKey": true,
+                        "identity": true,
+                        "nullable": true,
+                        "name": "BOOK_ID"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 64,
+                        "name": "BOOK_TITLE"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 255,
+                        "nullable": true,
+                        "name": "BOOK_DESCRIPTION"
+                    }, {
+                        "type": "INTEGER",
+                        "length": 0,
+                        "name": "BOOK_CATEGORY"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 255,
+                        "nullable": true,
+                        "name": "BOOK_IMAGE"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 17,
+                        "name": "BOOK_ISBN"
+                    }, {
+                        "type": "INTEGER",
+                        "nullable": true,
+                        "name": "BOOK_PAGES"
+                    }, {
+                        "type": "DOUBLE",
+                        "name": "BOOK_PRICE"
+                    }, {
+                        "type": "INTEGER",
+                        "length": 0,
+                        "name": "BOOK_CURRENCY"
+                    }]
+            }, {
+                "name": "BOOKSHOP_CATEGORIES",
+                "type": "TABLE",
+                "columns": [
+                    {
+                        "type": "INTEGER",
+                        "length": 0,
+                        "primaryKey": true,
+                        "identity": true,
+                        "nullable": true,
+                        "name": "CATEGORY_ID"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 32,
+                        "name": "CATEGORY_NAME"
+                    }]
+            }, {
+                "name": "BOOKSHOP_CURRENCIES",
+                "type": "TABLE",
+                "columns": [
+                    {
+                        "type": "INTEGER",
+                        "length": 0,
+                        "primaryKey": true,
+                        "identity": true,
+                        "nullable": true,
+                        "name": "CURRENCY_ID"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 20,
+                        "name": "CURRENCY_NAME"
+                    }]
+            }, {
+                "name": "BOOKSHOP_STORES",
+                "type": "TABLE",
+                "columns": [
+                    {
+                        "type": "INTEGER",
+                        "length": 0,
+                        "primaryKey": true,
+                        "identity": true,
+                        "nullable": true,
+                        "name": "STORE_ID"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 32,
+                        "name": "STORE_CITY"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 64,
+                        "name": "STORE_STREET"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 20,
+                        "name": "STORE_PHONE"
+                    }]
+            }, {
+                "name": "BOOKSHOP_STORE_BOOKS",
+                "type": "TABLE",
+                "columns": [
+                    {
+                        "type": "INTEGER",
+                        "length": 0,
+                        "primaryKey": true,
+                        "identity": true,
+                        "nullable": true,
+                        "name": "STORE_BOOK_ID"
+                    }, {
+                        "type": "INTEGER",
+                        "length": 0,
+                        "name": "STORE_BOOK_BOOK"
+                    }, {
+                        "type": "INTEGER",
+                        "name": "STORE_BOOK_QUANTITY"
+                    }, {
+                        "type": "INTEGER",
+                        "length": 0,
+                        "name": "STORE_BOOK_STORE"
+                    }]
+            }]
+    }
+}

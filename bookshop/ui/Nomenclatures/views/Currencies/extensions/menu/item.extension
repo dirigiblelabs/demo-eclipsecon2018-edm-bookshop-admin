@@ -1,0 +1,5 @@
+{
+	"description": "Currencies menu",
+	"extensionPoint": "shell-bookshop-menu",
+	"module": "bookshop/views/Currencies/menu/item.js"
+}

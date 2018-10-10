@@ -1,0 +1,5 @@
+{
+	"description": "Products tiles",
+	"extensionPoint": "launchpad-Bookshop-tiles",
+	"module": "bookshop/ui/Products/views/Books/extensions/tile/tile.js"
+}

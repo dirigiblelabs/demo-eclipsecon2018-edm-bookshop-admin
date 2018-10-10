@@ -1,0 +1,5 @@
+{
+	"description": "Products perspective",
+	"extensionPoint": "launchpad-Bookshop-perspective",
+	"module": "bookshop/ui/Products/extensions/perspective/perspective.js"
+}

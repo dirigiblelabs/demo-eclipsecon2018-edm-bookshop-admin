@@ -1,0 +1,5 @@
+{
+	"description": "StoreBooks view",
+	"extensionPoint": "launchpad-Bookshop-Stores-Stores-view",
+	"module": "bookshop/ui/Stores/views/master/details/StoreBooks/extensions/view.js"
+}

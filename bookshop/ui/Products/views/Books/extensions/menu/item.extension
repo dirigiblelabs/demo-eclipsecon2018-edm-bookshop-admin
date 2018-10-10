@@ -1,0 +1,5 @@
+{
+	"description": "Books menu",
+	"extensionPoint": "shell-bookshop-menu",
+	"module": "bookshop/views/Books/menu/item.js"
+}
