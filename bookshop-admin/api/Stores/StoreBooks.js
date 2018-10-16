@@ -1,6 +1,6 @@
 var rs = require('http/v3/rs');
-var dao = require('bookshop/data/dao/Stores/StoreBooks');
-var http = require('bookshop/api/http');
+var dao = require('bookshop-admin/data/dao/Stores/StoreBooks');
+var http = require('bookshop-admin/api/http');
 
 rs.service()
 	.resource('')
