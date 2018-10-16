@@ -1,8 +1,8 @@
 {
-	"guid": "bookshop",
+	"guid": "bookshop-admin",
 	"repository": {
 		"type": "git",
 		"branch": "master",
-		"url": "https://github.com/dirigiblelabs/demo-eclipsecon2018-edm.git"
+		"url": "https://github.com/dirigiblelabs/demo-eclipsecon2018-edm-bookshop-admin.git"
 	}
 }
