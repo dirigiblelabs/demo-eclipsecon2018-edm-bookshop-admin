@@ -1,5 +1,5 @@
 {
 	"description": "Nomenclatures tiles",
 	"extensionPoint": "launchpad-Bookshop-tiles",
-	"module": "bookshop/ui/Nomenclatures/views/Currencies/extensions/tile/tile.js"
+	"module": "bookshop-admin/ui/Nomenclatures/views/Currencies/extensions/tile/tile.js"
 }

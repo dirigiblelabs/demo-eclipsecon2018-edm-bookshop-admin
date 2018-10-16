@@ -35,7 +35,7 @@ angular.module('page')
 }])
 .controller('PageController', function ($scope, $http, $messageHub) {
 
-	var api = '../../../../../../../../services/v3/js/bookshop/api/Products/Categories.js';
+	var api = '../../../../../../../../services/v3/js/bookshop-admin/api/Products/Categories.js';
 
 	$scope.dateOptions = {
 		startingDay: 1

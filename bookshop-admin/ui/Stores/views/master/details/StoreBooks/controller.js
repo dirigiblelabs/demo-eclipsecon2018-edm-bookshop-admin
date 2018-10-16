@@ -41,8 +41,8 @@ angular.module('page')
 }])
 .controller('PageController', function ($scope, $http, $messageHub) {
 
-	var api = '../../../../../../../../../../services/v3/js/bookshop/api/Stores/StoreBooks.js';
-	var bookOptionsApi = '../../../../../../../../../../services/v3/js/bookshop/api/Products/Books.js';
+	var api = '../../../../../../../../../../services/v3/js/bookshop-admin/api/Stores/StoreBooks.js';
+	var bookOptionsApi = '../../../../../../../../../../services/v3/js/bookshop-admin/api/Products/Books.js';
 
 	$scope.dateOptions = {
 		startingDay: 1

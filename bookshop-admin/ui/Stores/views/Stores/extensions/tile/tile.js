@@ -8,14 +8,14 @@
  * SAP - initial API and implementation
  */
 
-var dao = require('bookshop/data/dao/Stores/Stores.js')
+var dao = require('bookshop-admin/data/dao/Stores/Stores.js')
 
 exports.getTile = function(relativePath) {
 	return {
 		'name': 'Stores',
 		'group': 'Stores',
 		'icon': 'shopping-cart',
-		'location': relativePath + 'services/v3/web/bookshop/ui/Stores/index.html',
+		'location': relativePath + 'services/v3/web/bookshop-admin/ui/Stores/index.html',
 		'count': dao.customDataCount(),
 		'order': '200'
 	};

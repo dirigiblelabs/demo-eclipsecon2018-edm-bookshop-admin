@@ -41,9 +41,9 @@ angular.module('page')
 }])
 .controller('PageController', function ($scope, $http, $messageHub) {
 
-	var api = '../../../../../../../../services/v3/js/bookshop/api/Products/Books.js';
-	var categoryOptionsApi = '../../../../../../../../services/v3/js/bookshop/api/Products/Categories.js';
-	var currencyOptionsApi = '../../../../../../../../services/v3/js/bookshop/api/Nomenclatures/Currencies.js';
+	var api = '../../../../../../../../services/v3/js/bookshop-admin/api/Products/Books.js';
+	var categoryOptionsApi = '../../../../../../../../services/v3/js/bookshop-admin/api/Products/Categories.js';
+	var currencyOptionsApi = '../../../../../../../../services/v3/js/bookshop-admin/api/Nomenclatures/Currencies.js';
 
 	$scope.categoryOptions = [];
 

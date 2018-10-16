@@ -31,7 +31,7 @@ rs.service()
 		.post(function(ctx, request, response) {
 			var entity = request.getJSON();
 			entity.Id = dao.create(entity);
-			response.setHeader('Content-Location', '/services/v3/js/bookshop/api/Currencies.js/' + entity.Id);
+			response.setHeader('Content-Location', '/services/v3/js/bookshop-admin/api/Currencies.js/' + entity.Id);
 			http.sendResponseCreated(entity);
 		})
 	.resource('{id}')

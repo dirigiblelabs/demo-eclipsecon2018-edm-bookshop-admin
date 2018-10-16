@@ -1,5 +1,5 @@
 {
 	"description": "Currencies view",
 	"extensionPoint": "launchpad-Bookshop-Nomenclatures-view",
-	"module": "bookshop/ui/Nomenclatures/views/Currencies/extensions/view.js"
+	"module": "bookshop-admin/ui/Nomenclatures/views/Currencies/extensions/view.js"
 }

@@ -75,13 +75,13 @@ angular.module('ideUiCore', ['ngResource'])
 	}
 }])
 .service('Perspectives', ['$resource', function($resource){
-	return $resource(relativePath + 'services/v3/js/bookshop/api/launchpad/perspectives.js');
+	return $resource(relativePath + 'services/v3/js/bookshop-admin/api/launchpad/perspectives.js');
 }])
 .service('Tiles', ['$resource', function($resource){
-	return $resource(relativePath + 'services/v3/js/bookshop/api/launchpad/tiles.js');
+	return $resource(relativePath + 'services/v3/js/bookshop-admin/api/launchpad/tiles.js');
 }])
 .service('Menu', ['$resource', function($resource){
-	return $resource(relativePath + 'services/v3/js/bookshop/api/launchpad/menu.js');
+	return $resource(relativePath + 'services/v3/js/bookshop-admin/api/launchpad/menu.js');
 }])
 .service('User', ['$http', function($http){
 	return {
@@ -124,7 +124,7 @@ angular.module('ideUiCore', ['ngResource'])
 		ViewRegistrySvc.factory(factoryName, ViewFactories[factoryName]);
 	});		
 	var get = function(viewsExtensionPoint){
-		return $resource(relativePath + 'services/v3/js/bookshop/api/launchpad/views.js')
+		return $resource(relativePath + 'services/v3/js/bookshop-admin/api/launchpad/views.js')
 			.query({
 				'extensionPoint': viewsExtensionPoint,
 				'pathSegments': pathSegments
@@ -185,7 +185,7 @@ angular.module('ideUiCore', ['ngResource'])
 			};
 			scope.user = User.get();
 		},
-		templateUrl: relativePath + 'services/v3/web/bookshop/ui/resources/templates/menu.html'
+		templateUrl: relativePath + 'services/v3/web/bookshop-admin/ui/resources/templates/menu.html'
 	}
 }])
 .directive('sidebar', ['Perspectives', function(Perspectives){
@@ -198,14 +198,14 @@ angular.module('ideUiCore', ['ngResource'])
 		},
 		link: function(scope, el, attrs){
 			scope.perspectives = Perspectives.query({'pathSegments': pathSegments});
-			scope.activePerspective = localStorage.getItem('DIRIGIBLE.application.bookshop.activePerspective');
+			scope.activePerspective = localStorage.getItem('DIRIGIBLE.application.bookshop-admin.activePerspective');
 
 			scope.setActivePerspective = function(activePerspective) {
-				localStorage.setItem('DIRIGIBLE.application.bookshop.activePerspective', activePerspective);
+				localStorage.setItem('DIRIGIBLE.application.bookshop-admin.activePerspective', activePerspective);
 				scope.activePerspective = activePerspective;
 			};
 		},
-		templateUrl: relativePath + 'services/v3/web/bookshop/ui/resources/templates/sidebar.html'
+		templateUrl: relativePath + 'services/v3/web/bookshop-admin/ui/resources/templates/sidebar.html'
 	}
 }])
 .directive('tiles', ['Tiles', function(Tiles){
@@ -219,7 +219,7 @@ angular.module('ideUiCore', ['ngResource'])
 		link: function(scope, el, attrs){
 			scope.tiles= Tiles.query({'pathSegments': pathSegments});
 		},
-		templateUrl: relativePath + 'services/v3/web/bookshop/ui/resources/templates/tiles.html'
+		templateUrl: relativePath + 'services/v3/web/bookshop-admin/ui/resources/templates/tiles.html'
 	}
 }])
 .directive('statusBar', ['messageHub', function(messageHub){

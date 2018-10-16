@@ -15,6 +15,6 @@ exports.getView = function(relativePath) {
 		'label': 'Books',
 		'factory': 'frame',
 		// 'region': 'center-bottom',
-		'link': relativePath + 'services/v3/web/bookshop/ui/Products/views/Books/index.html'
+		'link': relativePath + 'services/v3/web/bookshop-admin/ui/Products/views/Books/index.html'
 	};
 };

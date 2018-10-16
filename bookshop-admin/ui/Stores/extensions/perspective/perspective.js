@@ -12,7 +12,7 @@ exports.getPerspective = function(relativePath) {
 	return {
 		'name': 'Stores',
 		'image': 'shopping-cart',
-		'link': relativePath + 'services/v3/web/bookshop/ui/Stores/index.html',
+		'link': relativePath + 'services/v3/web/bookshop-admin/ui/Stores/index.html',
 		'order': 200,
 	};
 };

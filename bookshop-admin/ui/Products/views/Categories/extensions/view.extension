@@ -1,5 +1,5 @@
 {
 	"description": "Categories view",
 	"extensionPoint": "launchpad-Bookshop-Products-view",
-	"module": "bookshop/ui/Products/views/Categories/extensions/view.js"
+	"module": "bookshop-admin/ui/Products/views/Categories/extensions/view.js"
 }

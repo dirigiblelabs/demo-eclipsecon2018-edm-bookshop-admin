@@ -16,6 +16,6 @@ exports.getView = function(relativePath) {
 		'factory': 'frame',
 		'region': 'center-top',
 		'type': 'master',
-		'link': relativePath + 'services/v3/web/bookshop/ui/Stores/views/master/Stores/master/index.html'
+		'link': relativePath + 'services/v3/web/bookshop-admin/ui/Stores/views/master/Stores/master/index.html'
 	};
 };

@@ -8,14 +8,14 @@
  * SAP - initial API and implementation
  */
 
-var dao = require('bookshop/data/dao/Nomenclatures/Currencies.js')
+var dao = require('bookshop-admin/data/dao/Nomenclatures/Currencies.js')
 
 exports.getTile = function(relativePath) {
 	return {
 		'name': 'Currencies',
 		'group': 'Nomenclatures',
 		'icon': 'dollar',
-		'location': relativePath + 'services/v3/web/bookshop/ui/Nomenclatures/index.html',
+		'location': relativePath + 'services/v3/web/bookshop-admin/ui/Nomenclatures/index.html',
 		'count': dao.customDataCount(),
 		'order': '900'
 	};

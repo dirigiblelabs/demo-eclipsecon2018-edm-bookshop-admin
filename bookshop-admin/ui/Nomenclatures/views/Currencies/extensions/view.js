@@ -15,6 +15,6 @@ exports.getView = function(relativePath) {
 		'label': 'Currencies',
 		'factory': 'frame',
 		// 'region': 'center-bottom',
-		'link': relativePath + 'services/v3/web/bookshop/ui/Nomenclatures/views/Currencies/index.html'
+		'link': relativePath + 'services/v3/web/bookshop-admin/ui/Nomenclatures/views/Currencies/index.html'
 	};
 };

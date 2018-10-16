@@ -245,7 +245,7 @@ function LayoutController(viewRegistry, messageHub){
 		if(id){
 			if(!reconstruct){
 				//load from localStorage
-				var savedState = localStorage.getItem('DIRIGIBLE.application.bookshop.'+ id);
+				var savedState = localStorage.getItem('DIRIGIBLE.application.bookshop-admin.'+ id);
 				if(savedState !== null) {
 					this.config = JSON.parse(savedState);
 				}				
@@ -276,7 +276,7 @@ function LayoutController(viewRegistry, messageHub){
 			this.layout.on('stateChanged', function(){
 				//TODO: debounce or do that only with save button! This fires a lot
 				var state = JSON.stringify( this.layout.toConfig() );
-				localStorage.setItem('DIRIGIBLE.application.bookshop.'+ id, state );
+				localStorage.setItem('DIRIGIBLE.application.bookshop-admin.'+ id, state );
 			}.bind(this));			
 		}
 		

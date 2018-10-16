@@ -1,5 +1,5 @@
 {
 	"description": "Nomenclatures perspective",
 	"extensionPoint": "launchpad-Bookshop-perspective",
-	"module": "bookshop/ui/Nomenclatures/extensions/perspective/perspective.js"
+	"module": "bookshop-admin/ui/Nomenclatures/extensions/perspective/perspective.js"
 }

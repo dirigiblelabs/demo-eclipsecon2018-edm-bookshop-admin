@@ -12,7 +12,7 @@ exports.getPerspective = function(relativePath) {
 	return {
 		'name': 'Nomenclatures',
 		'image': 'cogs',
-		'link': relativePath + 'services/v3/web/bookshop/ui/Nomenclatures/index.html',
+		'link': relativePath + 'services/v3/web/bookshop-admin/ui/Nomenclatures/index.html',
 		'order': 900,
 	};
 };
