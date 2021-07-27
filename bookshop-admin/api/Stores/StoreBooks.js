@@ -1,4 +1,4 @@
-var rs = require('http/v3/rs');
+var rs = require('http/v4/rs');
 var dao = require('bookshop-admin/data/dao/Stores/StoreBooks');
 var http = require('bookshop-admin/api/http');
 
